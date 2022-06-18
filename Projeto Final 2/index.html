@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="formulario">
+        
+            <p>Qual o ano do seu nascimento?</p>
+            <input type="number" name="txtano" min="0" id="txtano">
+            <p>Sexo: 
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="radsex" id="other">     
+            <label for="outros">Outro</label><br><br>      
+        </p>
+        <p>
+            <input type="button" value="Verificar"  onclick="verificar()">
+        </p>     
+                               
+        </div>
+        <div id="resp">
+            Preencha os dados acima para ver o resultado!
+        </div>           
+        </section>
+        <footer>
+            <p>
+                Exemplo de aplicação com HTML, CSS e JavaScript
+            </p>
+        </footer>
+    <script src="idade.js"></script>
+</body>
+</html>
